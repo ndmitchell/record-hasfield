@@ -26,8 +26,10 @@ class HasField x r a | x r -> a where
     -- | Function to get and set a field in a record.
     hasField :: r -> (a -> r, a)
 
+-- | Get a field in a record.
 getField :: forall x r a . HasField x r a => r -> a
 getField = snd . hasField @x
 
+-- | Set a field in a record.
 setField :: forall x r a . HasField x r a => r -> a -> r
 setField = fst . hasField @x
