@@ -1,0 +1,3 @@
+Changelog for record-hasfield
+
+    Initial version
