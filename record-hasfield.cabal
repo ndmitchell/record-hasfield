@@ -14,7 +14,7 @@ description:
     <https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0042-record-set-field.rst GHC proposal #42>.
 homepage:           https://github.com/ndmitchell/record-hasfield#readme
 bug-reports:        https://github.com/ndmitchell/record-hasfield/issues
-tested-with:        GHC==8.6.4, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2, GHC==7.10.3
+tested-with:        GHC==8.6.4, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2
 
 extra-doc-files:
     CHANGES.txt
