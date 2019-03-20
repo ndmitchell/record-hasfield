@@ -7,7 +7,9 @@
 
 -- | This module provides a version of "GHC.Records" as it will be after the implementation of
 --   <https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0042-record-set-field.rst GHC proposal #42>.
-module GHC.Records.Future
+--
+--   In future GHC versions it will be an alias for "GHC.Records".
+module GHC.Records.Compat
     ( HasField(..)
     , getField
     , setField

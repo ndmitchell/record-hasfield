@@ -31,4 +31,4 @@ library
         base >= 4.4 && < 5
 
     exposed-modules:
-        GHC.Records.Future
+        GHC.Records.Compat
