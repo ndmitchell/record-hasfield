@@ -22,7 +22,7 @@ module GHC.Records.Compat
 --   The function should satisfy the invariant:
 --
 -- > uncurry ($) (hasField @x r) == r
-class HasField (x :: k) r a | x r -> a where
+class HasField x r a | x r -> a where
     -- | Function to get and set a field in a record.
     hasField :: r -> (a -> r, a)
 
