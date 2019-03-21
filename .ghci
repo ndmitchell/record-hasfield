@@ -1,3 +1,4 @@
 :set -fwarn-unused-binds -fwarn-unused-imports -fwarn-orphans
 :set -isrc
-:load GHC.Records.Compat
+:load test/Test.hs
+:def test const $ return ":main"
