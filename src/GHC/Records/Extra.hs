@@ -12,6 +12,13 @@
   #-}
 
 -- | Extensions over a future version of "GHC.Records".
+--   Provides the function 'modifyField' plus the instances:
+--
+-- * @HasField \'(x1,x2)@ for selecting first the @x1@ field, then the @x2@ field.
+--   Available for @()@ and tuples up to arity 5.
+--
+-- * @HasField \"_1\" (a,b) a@ for selecting the first compomnent of a pair,
+--   plus similarly for all fields up of all tuples up to arity 5.
 module GHC.Records.Extra
     ( module GHC.Records.Compat
     , modifyField
