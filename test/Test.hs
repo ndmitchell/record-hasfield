@@ -1,6 +1,7 @@
 {-# LANGUAGE MultiParamTypeClasses
            , TypeApplications
            , DataKinds
+           , FlexibleInstances
   #-}
 
 module Main(main) where
