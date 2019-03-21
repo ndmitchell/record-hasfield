@@ -12,7 +12,7 @@
   #-}
 
 -- | Extensions over a future version of "GHC.Records".
---   Provides the function 'modifyField' plus the instances:
+--   Provides the function 'modifyField' plus the orphan instances:
 --
 -- * @HasField \'(x1,x2)@ for selecting first the @x1@ field, then the @x2@ field.
 --   Available for @()@ and tuples up to arity 5.
