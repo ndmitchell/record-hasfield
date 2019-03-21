@@ -11,7 +11,8 @@ copyright:          Adam Gundry and Neil Mitchell 2018-2019
 synopsis:           A version of GHC.Records as available in future GHCs.
 description:
     This package provides a version of "GHC.Records" as it will be after the implementation of
-    <https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0042-record-set-field.rst GHC proposal #42>.
+    <https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0042-record-set-field.rst GHC proposal #42>,
+    plus some helper functions over it.
 homepage:           https://github.com/ndmitchell/record-hasfield#readme
 bug-reports:        https://github.com/ndmitchell/record-hasfield/issues
 tested-with:        GHC==8.6.4, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2
@@ -32,3 +33,4 @@ library
 
     exposed-modules:
         GHC.Records.Compat
+        GHC.Records.Extra

@@ -13,7 +13,6 @@ module GHC.Records.Compat
     ( HasField(..)
     , getField
     , setField
-    , modifyField
     ) where
 
 -- | Constraint representing the fact that the field @x@ can be get and set on
@@ -34,8 +33,3 @@ getField = snd . hasField @x
 -- | Set a field in a record.
 setField :: forall x r a . HasField x r a => r -> a -> r
 setField = fst . hasField @x
-
--- | Modify a field in a record.
-modifyField :: forall x r a . HasField x r a => r -> (a -> a) -> r
-modifyField r f = gen $ f val
-    where (gen, val) = hasField @x r
