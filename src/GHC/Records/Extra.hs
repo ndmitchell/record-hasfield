@@ -19,6 +19,10 @@
 --
 -- * @HasField \"_1\" (a,b) a@ for selecting the first compomnent of a pair,
 --   plus similarly for all fields up of all tuples up to arity 5.
+--
+--   Using these functions together you get:
+--
+-- > modifyField @'("_1","_2") negate ((1,2),3,4,5) == ((1,-2),3,4,5)
 module GHC.Records.Extra
     ( module GHC.Records.Compat
     , modifyField
