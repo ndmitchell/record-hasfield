@@ -1,4 +1,4 @@
-{-# LANGUAGE FunctionalDependencies
+{-# LANGUAGE MultiParamTypeClasses
            , TypeApplications
            , DataKinds
   #-}
@@ -7,11 +7,11 @@ module Main(main) where
 
 import GHC.Records.Extra
 
-data Foo = Foo {foo :: Int} deriving (Show,Eq)
+newtype Foo = Foo {foo :: Int} deriving (Show,Eq)
 instance HasField "foo" Foo Int where
     hasField r = (\x -> r{foo=x}, foo r)
 
-data Bar = Bar {bar :: Foo} deriving (Show,Eq)
+newtype Bar = Bar {bar :: Foo} deriving (Show,Eq)
 instance HasField "bar" Bar Foo where
     hasField r = (\x -> r{bar=x}, bar r)
 

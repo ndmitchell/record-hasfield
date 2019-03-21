@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wno-orphans #-}
 {-# LANGUAGE AllowAmbiguousTypes
-           , FunctionalDependencies
+           , MultiParamTypeClasses
            , ScopedTypeVariables
            , PolyKinds
            , TypeApplications
