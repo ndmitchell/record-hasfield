@@ -15,7 +15,7 @@ description:
     plus some helper functions over it.
 homepage:           https://github.com/ndmitchell/record-hasfield#readme
 bug-reports:        https://github.com/ndmitchell/record-hasfield/issues
-tested-with:        GHC==8.6.4, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2
+tested-with:        GHC==8.6.5, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2
 
 extra-doc-files:
     CHANGES.txt
