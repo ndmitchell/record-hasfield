@@ -7,7 +7,7 @@ license-file:       LICENSE
 category:           Development
 author:             Neil Mitchell <ndmitchell@gmail.com>
 maintainer:         Neil Mitchell <ndmitchell@gmail.com>
-copyright:          Adam Gundry and Neil Mitchell 2018-2021
+copyright:          Adam Gundry and Neil Mitchell 2018-2022
 synopsis:           A version of GHC.Records as available in future GHCs.
 description:
     This package provides a version of "GHC.Records" as it will be after the implementation of
