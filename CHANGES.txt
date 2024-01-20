@@ -1,4 +1,5 @@
 Changelog for record-hasfield
 
+    Add required extension for newer GHC
 1.0, released 2019-03-21
     Initial version
